@@ -26,7 +26,7 @@ namespace ariel{
 //----------------------------------------------------------------------------------------------------------------------
         class AscendingIterator{//iterator class for the container that iterate over the elements in ascending order
         private:
-            MagicalContainer &containerAscendingIterator;//reference to the container
+            MagicalContainer &MagicContainer;//reference to the container
             size_t _elementLocation;//the location of the iterator
         public:
             AscendingIterator(MagicalContainer &container); // Default constructor
@@ -52,7 +52,7 @@ namespace ariel{
         class DescendingIterator
         {
         private:
-            MagicalContainer &desIterator;
+            MagicalContainer &MagicContainer;//reference to the container
             size_t _elementLocation;//the location of the iterator
         public:
             DescendingIterator(MagicalContainer &container);// Default constructor
@@ -77,7 +77,7 @@ namespace ariel{
         class PrimeIterator//iterator class for the container that iterate over the prime elements
         {
         private:
-            MagicalContainer &primeIterator;//reference to the MagicalContainer
+            MagicalContainer &MagicContainer;//reference to the MagicalContainer
             vector<int *> _primeVector;//vector of the prime elements
             size_t _elementLocation;//the location of the current element
 
@@ -106,7 +106,7 @@ namespace ariel{
         class SideCrossIterator
         {
         private:
-            MagicalContainer &sideIterator;//reference to the MagicalContainer
+            MagicalContainer &MagicContainer;//reference to the MagicalContainer
             size_t _elementLocation;//the location of the current element
         public:
             SideCrossIterator(MagicalContainer &container);// Default constructor
